@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 <html lang="en">
 <head>
@@ -11,9 +13,13 @@
 </head>
 <body>
 
+<Header></Header>
+
 <h1>focus styling</h1>
 
 <slot></slot>
+
+<Footer></Footer>
 
 </body>
 </html>

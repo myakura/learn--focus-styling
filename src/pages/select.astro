@@ -1,33 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<style>
-select {
-	font-size: 2em;
-}
-.focus:focus {
-	outline: 4px solid goldenrod;
-	outline-offset: 2px;
-}
-.focus-visible:focus-visible {
-	outline: 4px solid goldenrod;
-	outline-offset: 2px;
-}
-p:focus-visible {
-	outline: 4px solid goldenrod;
-}
-</style>
 
 <BaseLayout>
 
 <h1>select</h1>
 
-<p tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
+<p class="focusabletext" tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
 
 <div class="switcher mt-3">
 	<div class="stack">
 		<h2>no style</h2>
-		<select class="no-style">
+		<select class="ui no-style">
       <option>one</option>
       <option>two</option>
       <option>three</option>
@@ -35,7 +19,7 @@ p:focus-visible {
 	</div>
 	<div class="stack">
 		<h2>:focus</h2>
-		<select class="focus">
+		<select class="ui focus">
       <option>one</option>
       <option>two</option>
       <option>three</option>
@@ -43,7 +27,7 @@ p:focus-visible {
 	</div>
 	<div class="stack">
 		<h2>:focus-visible</h2>
-		<select class="focus-visible">
+		<select class="ui focus-visible">
       <option>one</option>
       <option>two</option>
       <option>three</option>

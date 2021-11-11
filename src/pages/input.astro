@@ -1,41 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<style>
-input {
-	font-size: 2em;
-}
-.focus:focus {
-	outline: 4px solid goldenrod;
-	outline-offset: 2px;
-}
-.focus-visible:focus-visible {
-	outline: 4px solid goldenrod;
-	outline-offset: 2px;
-}
-p:focus-visible {
-	outline: 4px solid goldenrod;
-}
-</style>
 
 <BaseLayout>
 
 <h1>input</h1>
 
-<p tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
+<p class="focusabletext" tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
 
 <div class="switcher mt-3">
 	<div class="stack">
 		<h2>no style</h2>
-		<input size="10" class="no-style">
+		<input size="10" class="ui no-style">
 	</div>
 	<div class="stack">
 		<h2>:focus</h2>
-		<input size="10" class="focus">
+		<input size="10" class="ui focus">
 	</div>
 	<div class="stack">
 		<h2>:focus-visible</h2>
-		<input size="10" class="focus-visible">
+		<input size="10" class="ui focus-visible">
 	</div>
 </div>
 

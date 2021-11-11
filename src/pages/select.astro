@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<style>
+select {
+	font-size: 2em;
+}
+.focus:focus {
+	outline: 4px solid goldenrod;
+	outline-offset: 2px;
+}
+.focus-visible:focus-visible {
+	outline: 4px solid goldenrod;
+	outline-offset: 2px;
+}
+p:focus-visible {
+	outline: 4px solid goldenrod;
+}
+</style>
+
+<BaseLayout>
+
+<h1>select</h1>
+
+<p tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
+
+<div class="switcher">
+	<div class="stack">
+		<h2>no style</h2>
+		<select class="no-style">
+      <option>one</option>
+      <option>two</option>
+      <option>three</option>
+    </select>
+	</div>
+	<div class="stack">
+		<h2>:focus</h2>
+		<select class="focus">
+      <option>one</option>
+      <option>two</option>
+      <option>three</option>
+    </select>
+	</div>
+	<div class="stack">
+		<h2>:focus-visible</h2>
+		<select class="focus-visible">
+      <option>one</option>
+      <option>two</option>
+      <option>three</option>
+    </select>
+	</div>
+</div>
+
+</BaseLayout>

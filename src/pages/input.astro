@@ -1,26 +1,9 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<html lang="en">
-
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>focus styling</title>
 <style>
 input {
 	font-size: 2em;
-}
-.horizontal-stack {
-	display: flex;
-	gap: 2em;
-}
-.stack {
-	display: flex;
-	flex-direction: column;
-	gap: .5em;
-}
-.no-style {
-	
 }
 .focus:focus {
 	outline: 4px solid goldenrod;
@@ -34,27 +17,24 @@ p:focus-visible {
 	outline: 4px solid goldenrod;
 }
 </style>
-</head>
 
-<body>
-<h1>focus styling</h1>
+<BaseLayout>
 
 <p tabindex="0" autofocus>Try focusing these text fields using <kbd>Tab</kbd> key or clicking on it.</p>
 
-<div class="horizontal-stack">
+<div class="switcher">
 	<div class="stack">
-		<label for="input-no-style">no style</label>
-		<input size="10" id="input-no-style" class="no-style">
+		<h2>no style</h2>
+		<input size="10" class="no-style">
 	</div>
 	<div class="stack">
-		<label for="input-focus">:focus pseudo class</label>
-		<input size="10" id="input-focus" class="focus">
+		<h2>:focus</h2>
+		<input size="10" class="focus">
 	</div>
 	<div class="stack">
-		<label for="input-focus-visible">:focus-visible pseudo class</label>
-		<input size="10" id="input-focus-visible" class="focus-visible">
+		<h2>:focus-visible</h2>
+		<input size="10" class="focus-visible">
 	</div>
 </div>
-</body>
 
-</html>
+</BaseLayout>

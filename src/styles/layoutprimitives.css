@@ -1,0 +1,27 @@
+.stack {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+}
+.stack > * {
+	margin-block: 0;
+}
+
+.stack-h {
+	display: flex;
+	gap: var(--gap);
+}
+.stack-h > * {
+	margin-inline: 0;
+}
+
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gap);
+	--threshold: 15rem;
+}
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc((var(--threshold) - 100%) * 999);
+}

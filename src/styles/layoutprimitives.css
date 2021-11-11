@@ -1,7 +1,7 @@
 .stack {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap);
+	gap: var(--space);
 }
 .stack > * {
 	margin-block: 0;
@@ -9,7 +9,7 @@
 
 .stack-h {
 	display: flex;
-	gap: var(--gap);
+	gap: var(--space);
 }
 .stack-h > * {
 	margin-inline: 0;
@@ -18,7 +18,7 @@
 .switcher {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--gap);
+	gap: var(--space);
 	--threshold: 15rem;
 }
 .switcher > * {

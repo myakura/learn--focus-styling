@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import IntroMessage from "../components/IntroMessage.astro";
 ---
 
 <BaseLayout>
 
 <h1>input</h1>
 
-<p class="focusabletext" tabindex="0" autofocus><kbd>Tab</kbd>キーを押す、もしくはマウスクリックでフォーカスしてください。</p>
+<IntroMessage></IntroMessage>
 
 <div class="switcher mt-3">
 	<div class="stack">

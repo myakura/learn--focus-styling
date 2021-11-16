@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import IntroMessage from "../components/IntroMessage.astro";
 let pageName = "select";
 ---
 
@@ -7,7 +8,7 @@ let pageName = "select";
 
 <h1>{pageName}</h1>
 
-<p class="focusabletext" tabindex="0" autofocus><kbd>Tab</kbd>キーを押す、もしくはマウスクリックでフォーカスしてください。</p>
+<IntroMessage></IntroMessage>
 
 <div class="switcher mt-3">
 	<div class="stack">

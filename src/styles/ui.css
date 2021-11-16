@@ -9,6 +9,3 @@
 	outline: 4px solid goldenrod;
 	outline-offset: 2px;
 }
-.focusabletext:focus-visible {
-	outline: 4px solid goldenrod;
-}

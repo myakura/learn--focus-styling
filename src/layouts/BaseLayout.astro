@@ -1,12 +1,15 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+const { pageName = "📄" } = Astro.props;
+const siteName = "focus styling";
+const pageTitle = `${pageName} | ${siteName}`;
 ---
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>focus styling</title>
+<title>{pageTitle}</title>
 <link rel="stylesheet" href="{Astro.resolve('../styles/variables.css')}">
 <link rel="stylesheet" href="{Astro.resolve('../styles/base.css')}">
 <link rel="stylesheet" href="{Astro.resolve('../styles/layoutprimitives.css')}">

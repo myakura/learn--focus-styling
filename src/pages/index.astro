@@ -1,10 +1,11 @@
 ---
-import IndexLayout from "../layouts/IndexLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageName = "focus styling";
 ---
 
-<IndexLayout>
+<BaseLayout pageName={pageName}>
 
-<h1>focus styling</h1>
+<h1>{pageName}</h1>
 
 <p>フォーカスのスタイル検証用ページ。</p>
 
@@ -17,4 +18,4 @@ import IndexLayout from "../layouts/IndexLayout.astro";
 <li><a href="/text">テキスト</a></li>
 </ul>
 
-</IndexLayout>
+</BaseLayout>

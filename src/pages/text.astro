@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import IntroMessage from "../components/IntroMessage.astro";
+const pageName = "テキスト";
 ---
 
-<BaseLayout>
+<BaseLayout pageName={pageName}>
 
-<h1>text</h1>
+<h1>{pageName}</h1>
 
 <IntroMessage></IntroMessage>
 

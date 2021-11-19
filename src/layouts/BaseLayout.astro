@@ -2,9 +2,9 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 const {
-  pageName = "📄",
-  showHeader = true,
-  showFooter = true
+	pageName = "📄",
+	showHeader = true,
+	showFooter = true
 } = Astro.props;
 const siteName = "focus styling";
 const pageTitle = `${pageName} | ${siteName}`;
@@ -27,7 +27,7 @@ const pageTitle = `${pageName} | ${siteName}`;
 }
 
 <main>
-  <slot></slot>
+	<slot></slot>
 </main>
 
 { showFooter &&

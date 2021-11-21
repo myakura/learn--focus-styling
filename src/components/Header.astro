@@ -1,3 +1,6 @@
+---
+const { topPage = false } = Astro.props;
+---
 <style>
 header {
 	background-color: #111;
@@ -10,5 +13,8 @@ header :any-link {
 }
 </style>
 <header>
-<a href="/">focus styling</a>
+{ !topPage
+? <a href="../">focus styling</a>
+: <a>focus styling</a>
+}
 </header>
